@@ -1,0 +1,10 @@
+/.venv/
+/__MACOSX
+/__pycache__
+/*/__pycache__/
+/HW3/data/
+/*/*.docx
+/*/*.zip
+*.png
+*.csv
+*.pdf
