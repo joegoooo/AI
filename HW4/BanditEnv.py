@@ -1,7 +1,7 @@
 import numpy as np
 
 class BanditEnv:
-    def __init__(self, num_arms, stationary):
+    def __init__(self, num_arms, stationary=True):
         self.num_arms = num_arms
         self.action_history = []
         self.reward_history = []
@@ -33,6 +33,7 @@ class BanditEnv:
             for i in range(self.num_arms):
                 values = np.random.normal(self.mean_values[i], 1, 100)
                 self.arms.append(values)
+            self.optimal = np.argmax(self.mean_values)
         return reward
     
     def export_history(self):

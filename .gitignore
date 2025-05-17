@@ -8,3 +8,5 @@
 *.png
 *.csv
 *.pdf
+/dog_clips
+*.json
